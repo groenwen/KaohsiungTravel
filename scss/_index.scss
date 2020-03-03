@@ -1,0 +1,177 @@
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    background: url(../images/Hero.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    h1 {
+        padding-bottom: 96px;
+        color: $secondary;
+    }
+    select {
+        max-width: 450px;
+        width: 60%;
+        font-size: 18px;
+        padding: 12px 15px;
+        border: 2px solid $secondary;
+        background: rgba($secondary, .7) url(../images/icons_down.png) no-repeat right 11px center;
+        appearance: none;
+        option {
+            padding: 15px;
+        }
+    }
+}
+.hot {
+    max-width: 800px;
+    width: 85%;
+    margin: -25px auto 0px;
+    padding: 18px 26px;
+    border-radius: 5px;
+    background: $secondary;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    @include pad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-zone {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px 10px 0px;
+        @include pad {
+            padding: 5px 0px 0px;
+        }
+        a {
+            display: block;
+            margin: 10px 15px 0px;
+            padding: 10px 35px;
+            text-align: center;
+            font-size: 1.25rem;
+            color: $secondary;
+            border-radius: 5px;
+            @include pad {
+                margin: 10px 10px 0px;
+                padding: 10px 20px;
+
+            }
+        }
+    }
+}
+.line {
+    max-width: 900px;
+    width: 95%;
+    position: relative;
+    margin: 50px auto 75px;
+    border-top: 2px dashed $categoryB;
+    &-point {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        padding: 2px;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        border-radius: 50%;
+        border: 2px solid $categoryB;
+        background-color: $secondary;
+        img {
+            width: 12px;
+            height: 10px;
+        }
+    }
+}
+.main {
+    padding: 0px 35px 50px;
+    @include pad {
+        padding: 0px 0px 50px;
+    }
+    &-title {
+        text-align: center;
+    }
+}
+.spot {
+    display: flex;
+    flex-wrap: wrap;
+    @include pad {
+        display: block;
+    }
+    &-total {
+        margin: 20px 0px 24px;
+        text-align: center;
+        color: #4a4a4a;
+    }
+    >li {
+        width: 48%;
+        margin: 1%;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+        @include pad {
+            width: 92%;
+            margin: 0px auto 16px;
+        }
+    }
+    &-img {
+        position: relative;
+        height: 155px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    &-title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 14px 22px;
+        color: $secondary;
+        background: linear-gradient(rgba($secondary, 0), rgba($primary, .54));
+    }
+}
+.spot-info {
+    position: relative;
+    padding: 5px 25px 20px;
+    .info {
+        li {
+            margin-top: 12px;
+            padding-left:28px;
+            line-height: 20px;
+        }
+        &-opentime {
+            background: url(../images/icons_clock.png) no-repeat left center;
+        }
+        &-address {
+            background: url(../images/icons_pin.png) no-repeat  left center;
+        }
+        &-tel {
+            background: url(../images/icons_phone.png) no-repeat left 2px center;
+        }   
+    }
+    .info-ticket {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 0px 25px 20px 0px;
+    }
+}
+
+footer {
+    font-size: 14px;
+    color: $secondary;
+    padding: 24px 0px;
+    text-align: center;
+    background-color: $categoryB;
+    .source {
+        color: $categoryY;
+        padding-top: 15px;
+    }
+}

@@ -1,0 +1,57 @@
+//color
+$primary: #000000;
+$secondary: #ffffff;
+$categoryB: #559AC8;
+$categoryY: #F5D105;
+$categoryR: #FFA782;
+$categoryP: #8A82CC;
+
+// width
+$width-pad: 768px;
+$width-mobile: 767px;
+$width-iphone6Plus: 414px;
+$width-iphone5: 320px;
+
+//RWD 斷點
+@mixin pad {
+    @media (max-width: $width-pad){
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: $width-mobile){
+        @content;
+    }
+}
+@mixin iphone6Plus {
+    @media (max-width: $width-iphone6Plus){
+        @content;
+    }
+}
+@mixin iphone5 {
+    @media (max-width: $width-iphone5){
+        @content;
+    }
+}
+
+//清除浮動
+@mixin clearfix {
+    clear: both;
+    display: table;
+    content:'';
+}
+
+//圖片取代文字
+@mixin hide-text {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+//區塊置中
+@mixin block-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

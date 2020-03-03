@@ -1,0 +1,51 @@
+body, html{
+    font-family: "PingFangTC-Light", 微軟正黑體, "Microsoft JhengHei", sans-serif;
+    font-size: 16px;
+    color: $primary;
+    letter-spacing: .5px;
+}
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box; //chrome
+	-moz-box-sizing: border-box; //firefox
+}
+h1 {
+    font-size: 2.5rem; //40px
+}
+h2 {
+    font-size: 2.25rem; //36px
+}
+h3 {
+    font-size: 1.5rem; //24px
+}
+h4 {
+    font-size: 1.125rem; //18px
+}
+a {
+    text-decoration: none;
+}
+.categoryB {
+    background-color: #559AC8;;
+}
+.categoryB-text {
+    color: #559AC8;
+}
+.categoryY {
+    background-color: #F5D105;;
+}
+.categoryY-text {
+    color: #F5D105;
+}
+
+.categoryR {
+    background-color: #FFA782;;
+}
+.categoryR-text {
+    color: #FFA782;
+}
+.categoryP {
+    background-color: #8A82CC;;
+}
+.categoryP-text {
+    color: #8A82CC;
+}
