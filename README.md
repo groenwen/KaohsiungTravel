@@ -1,10 +1,13 @@
-# 高雄旅遊網(JavaScript練習)
-網址：<a>https://groenwen.github.io/KaohsiungTravel/</a><br>
-說明：由六角學院提供設計稿<br><br>
-練習重點：
-<ul>
-	<li>JavaScript 功能撰寫</li>
-	<li>使用 Ajax 串接 高雄市政府 Open Data</li>
-  <li>使用 SCSS 撰寫</li>
-	<li>自行切版、撰寫 RWD</li>
-</ul>
+# 高雄旅遊網
+>由六角學院提供設計稿，為 JavaScript 課程的最終作業
+
+### 網頁
+https://groenwen.github.io/KaohsiungTravel/
+
+### 練習重點
+* JavaScript 
+  * 選單、熱門行政區功能撰寫  
+  * 使用 Ajax 串接 高雄市政府 Open Data
+* SCSS
+* 切版
+* RWD
